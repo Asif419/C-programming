@@ -1,0 +1,140 @@
+Followed:
+https://www.youtube.com/watch?v=KJgsSFOSQv0
+https://www.programiz.com/c-programming
+
+
+
+C keywords: 
+auto------------:
+double----------:
+int-------------:
+struct----------:
+break-----------:
+else------------:
+long------------:
+switch----------:
+case------------:
+enum------------:
+register--------:
+typedef---------:
+char------------:
+extern----------:
+return----------:
+union-----------:
+continue--------:
+for-------------:
+signed----------:
+void------------:
+do--------------:
+if--------------:
+static----------:
+while-----------:
+default---------:
+goto------------:
+sizeof----------:
+volatile--------:
+const-----------:
+float-----------:
+short-----------:
+unsigned--------:
+
+
+
+
+C identifier:
+void int name;
+//Here name is identifier
+
+
+
+
+Variables:
+In programming, a variable is a container (storage area) to hold data.
+
+Example:
+int playerScore = 95;
+char ch = 'a';
+
+Rules for naming Variable:
+01. A variable name can only have letters (both uppercase and lowercase letters), digits and underscore.
+02. The first letter of a variable should be either a letter or an underscore.
+03. There is no rule on how long a variable name (identifier) can be.
+    However, you may run into problems in some compilers if the variable name is longer than 31 characters.
+    
+*C is a strongly typed language. This means that the variable type cannot be changed once it is declared
+
+
+
+
+Integers:
+An integer is a numeric literal(associated with numbers) without any fractional or exponential part. 
+There are three types of integer literals in C programming:
+01. decimal (base 10)     | Decimal: 0, -9, 22 etc
+02. octal (base 8)        | Octal: 021, 077, 033 etc
+03. hexadecimal (base 16) | Hexadecimal: 0x7f, 0x2a, 0x521 etc
+
+*In C programming, octal starts with a 0, and hexadecimal starts with a 0x.
+
+
+
+
+Characters:
+A character literal is created by enclosing a single character inside single quotation marks.
+For example: 'a', 'm', 'F', '2', '}' etc.
+
+
+
+ Escape Sequences:
+\b	Backspace
+\f	Form feed
+\n	Newline
+\r	Return
+\t	Horizontal tab
+\v	Vertical tab
+\\	Backslash
+\'	Single quotation mark
+\"	Double quotation mark
+\?	Question mark
+\0	Null character
+
+
+
+String Literals:
+"good"                  //string constant
+""                      //null string constant
+"      "                //string constant of six white space
+"x"                     //string constant having a single character.
+"Earth is round\n"      //prints string with a newline
+
+
+
+Constants:
+const double PI = 3.14;
+
+
+
+Basic data types:
+Type	                  Size (bytes)    	      Format Specifier
+int	                    at least 2, usually 4	        %d, %i
+char	                  1                           	%c
+float                 	4	                            %f
+double                	8	                            %lf
+short int              	2 usually                    	%hd
+unsigned int      	    at least 2, usually 4       	%u
+long int              	at least 4, usually 8	        %ld, %li
+long long int	          at least 8	                  %lld, %lli
+unsigned long int	      at least 4                  	%lu
+unsigned long long int	at least 8	                  %llu
+signed char           	1                           	%c
+unsigned char	          1	                            %c
+long double	            at least 10, usually 12 or 16	%Lf
+
+
+
+
+Signed and unsigned:
+unsigned int x;
+int y;
+Here, the variable x can hold only zero and positive values because we have used the unsigned modifier.
+Considering the size of int is 4 bytes, variable y can hold values from -231 to 231-1, 
+whereas variable x can hold values from 0 to 232-1.
