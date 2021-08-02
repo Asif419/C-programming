@@ -1,0 +1,72 @@
+user defiend function
+#include <stdio.h>
+int addNumbers(int a, int b);         // function prototype
+
+int main()
+{
+    int n1,n2,sum;
+
+    printf("Enters two numbers: ");
+    scanf("%d %d",&n1,&n2);
+
+    sum = addNumbers(n1, n2);        // function call & passing arguments
+    printf("sum = %d",sum);
+
+    return 0;
+}
+
+int addNumbers(int a, int b)         // function definition and parameter
+{
+    int result;
+    result = a+b;
+    return result;                  // return statement
+}
+
+*Syntax of function prototype
+returnType functionName(type1 argument1, type2 argument2, ...);
+
+
+
+Every variable in C programming has two properties: type and storage class
+Type refers to the data type of a variable. And, storage class determines the scope, visibility and lifetime of a variable.
+There are 4 types of storage class:
+automatic
+external
+static
+register
+
+Local Variable
+int main() {
+    int n1; // n1 is a local variable to main()
+}
+
+Global Variable
+int n = 5;  // global variable
+
+int main()
+{
+    ++n;     
+    display();
+    return 0;
+}
+
+Register Variable
+The register keyword is used to declare register variables. Register variables were supposed to be faster than local variables.
+However, modern compilers are very good at code optimization, and there is a rare chance that using register variables will make your program faster.
+Unless you are working on embedded systems where you know how to optimize code for the given application, there is no use of register variables.
+
+Static Variable
+#include <stdio.h>
+void display();
+
+int main()
+{
+    display();
+    display();
+}
+void display()
+{
+    static int c = 1;
+    c += 5;
+    printf("%d  ",c);
+}
