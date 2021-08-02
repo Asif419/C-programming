@@ -1,0 +1,10 @@
+Problem 01:
+If Visual Studio code show "undefined reference to `WinMain@16'"
+Or, program dont run from any file location after environment setup
+
+Solution 01:
+https://www.youtube.com/watch?v=r2IRvBADriA
+>Visual Studio Code
+>setting
+>search "save"
+>turn on "save file before run"
