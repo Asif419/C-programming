@@ -1,147 +1,154 @@
 if...else
-#include<stdio.h>
+|
+  #include<stdio.h>
 
-int main(){
-    int number;
+  int main(){
+      int number;
 
-    printf("Enter a number: ");
-    scanf("%d", &number);
+      printf("Enter a number: ");
+      scanf("%d", &number);
 
-    if(number%2 == 0)
-        printf("%d is an even number.", number);
-    else
-        printf("%d is an odd number.", number);
+      if(number%2 == 0)
+          printf("%d is an even number.", number);
+      else
+          printf("%d is an odd number.", number);
 
-    return 0;
-}
+      return 0;
+  }
 
 
 
 if...else Ladder
-if (test expression1) {
-   // statement(s)
-}
-else if(test expression2) {
-   // statement(s)
-}
-else if (test expression3) {
-   // statement(s)
-}
-.
-.
-else {
-   // statement(s)
-}
+|
+  if (test expression1) {
+     // statement(s)
+  }
+  else if(test expression2) {
+     // statement(s)
+  }
+  else if (test expression3) {
+     // statement(s)
+  }
+  .
+  .
+  else {
+     // statement(s)
+  }
 
 
 
 
 Nested if...else
-#include <stdio.h>
-int main() {
-    int number1, number2;
-    printf("Enter two integers: ");
-    scanf("%d %d", &number1, &number2);
+|
+  #include <stdio.h>
+  int main() {
+      int number1, number2;
+      printf("Enter two integers: ");
+      scanf("%d %d", &number1, &number2);
 
-    if (number1 >= number2) {
-      if (number1 == number2) {
-        printf("Result: %d = %d",number1,number2);
+      if (number1 >= number2) {
+        if (number1 == number2) {
+          printf("Result: %d = %d",number1,number2);
+        }
+        else {
+          printf("Result: %d > %d", number1, number2);
+        }
       }
       else {
-        printf("Result: %d > %d", number1, number2);
+          printf("Result: %d < %d",number1, number2);
       }
-    }
-    else {
-        printf("Result: %d < %d",number1, number2);
-    }
 
-    return 0;
-}
+      return 0;
+  }
 
 
 
 for loop
-// Print numbers from 1 to 10
-#include <stdio.h>
+|
+  // Print numbers from 1 to 10
+  #include <stdio.h>
 
-int main() {
-  int i;
+  int main() {
+    int i;
 
-  for (i = 1; i < 11; ++i)
-  {
-    printf("%d ", i);
+    for (i = 1; i < 11; ++i)
+    {
+      printf("%d ", i);
+    }
+    return 0;
   }
-  return 0;
-}
 
 
 
 while loop:
-#include <stdio.h>
-int main() {
-  int i = 1;
-    
-  while (i <= 5) {
-    printf("%d\n", i);
-    ++i;
-  }
+|
+  #include <stdio.h>
+  int main() {
+    int i = 1;
 
-  return 0;
-}
+    while (i <= 5) {
+      printf("%d\n", i);
+      ++i;
+    }
+
+    return 0;
+  }
 
 
 
 do....while loop
-do {
-  // the body of the loop
-}
-while (testExpression);
+|
+  do {
+    // the body of the loop
+  }
+  while (testExpression);
 
 
 
 
 break ,continue & goto
-break;
-continue;
-goto;
+  break;
+  continue;
+  goto;
 
 
 
 
 switch case
-#include <stdio.h>
+|
+  #include <stdio.h>
 
-int main() {
-    char operator;
-    double n1, n2;
+  int main() {
+      char operator;
+      double n1, n2;
 
-    printf("Enter an operator (+, -, *, /): ");
-    scanf("%c", &operator);
-    printf("Enter two operands: ");
-    scanf("%lf %lf",&n1, &n2);
+      printf("Enter an operator (+, -, *, /): ");
+      scanf("%c", &operator);
+      printf("Enter two operands: ");
+      scanf("%lf %lf",&n1, &n2);
 
-    switch(operator)
-    {
-        case '+':
-            printf("%.1lf + %.1lf = %.1lf",n1, n2, n1+n2);
-            break;
+      switch(operator)
+      {
+          case '+':
+              printf("%.1lf + %.1lf = %.1lf",n1, n2, n1+n2);
+              break;
 
-        case '-':
-            printf("%.1lf - %.1lf = %.1lf",n1, n2, n1-n2);
-            break;
+          case '-':
+              printf("%.1lf - %.1lf = %.1lf",n1, n2, n1-n2);
+              break;
 
-        case '*':
-            printf("%.1lf * %.1lf = %.1lf",n1, n2, n1*n2);
-            break;
+          case '*':
+              printf("%.1lf * %.1lf = %.1lf",n1, n2, n1*n2);
+              break;
 
-        case '/':
-            printf("%.1lf / %.1lf = %.1lf",n1, n2, n1/n2);
-            break;
+          case '/':
+              printf("%.1lf / %.1lf = %.1lf",n1, n2, n1/n2);
+              break;
 
-        // operator doesn't match any case constant +, -, *, /
-        default:
-            printf("Error! operator is not correct");
-    }
+          // operator doesn't match any case constant +, -, *, /
+          default:
+              printf("Error! operator is not correct");
+      }
 
-    return 0;
-}
+      return 0;
+  }
