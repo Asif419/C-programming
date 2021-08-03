@@ -1,3 +1,4 @@
+|
 #include <stdio.h>
 int main()
 {
@@ -10,7 +11,7 @@ int main()
 }
 
 
-
+|
 #include <stdio.h>
 
 int main(){
@@ -30,6 +31,7 @@ int main(){
 
 
 
+|
 #include <stdio.h>
 int main()
 {
@@ -43,16 +45,17 @@ int main()
 
 
 
-int	%d
-char	%c
-float	%f
-double	%lf
-short int	%hd
-unsigned int	%u
-long int	%li
-long long int	%lli
-unsigned long int	%lu
-unsigned long long int	%llu
-signed char	%c
-unsigned char	%c
-long double	%Lf
+|
+  int	%d
+  char	%c
+  float	%f
+  double	%lf
+  short int	%hd
+  unsigned int	%u
+  long int	%li
+  long long int	%lli
+  unsigned long int	%lu
+  unsigned long long int	%llu
+  signed char	%c
+  unsigned char	%c
+  long double	%Lf
