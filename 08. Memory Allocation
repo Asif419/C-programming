@@ -1,0 +1,98 @@
+What/Why memory allocation?
+| Sometimes the size of the array we declared may be insufficient. 
+  To solve this issue,we can allocate memory manually during run-time. 
+  This is known as dynamic memory allocation in C programming
+
+| To allocate memory dynamically, library functions are 
+  malloc(), calloc(), realloc() and free() 
+  are used. These functions are defined in the 
+  <stdlib.h> header file.
+
+malloc()
+| The name "malloc" stands for memory allocation.
+| ptr = (float*) malloc(100 * sizeof(float));
+| The above statement allocates 400 bytes of memory. 
+  It's because the size of float is 4 bytes. 
+  And, the pointer ptr holds the address of the first 
+  byte in the allocated memory.
+  
+calloc()
+| The name "calloc" stands for contiguous allocation.
+| The malloc() function allocates memory and leaves the memory uninitialized, 
+  whereas the calloc() function allocates memory and initializes all bits to zero.
+| ptr = (float*) calloc(25, sizeof(float));
+
+free()
+| Dynamically allocated memory created with either calloc() or malloc() 
+  doesn't get freed on their own. 
+  We must explicitly use free() to release the space.
+| free(ptr);
+
+
+Example:
+| 
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+  int n, i, *ptr, sum = 0;
+
+  printf("Enter number of elements: ");
+  scanf("%d", &n);
+
+  ptr = (int*) malloc(n * sizeof(int));
+ 
+  // if memory cannot be allocated
+  if(ptr == NULL) {
+    printf("Error! memory not allocated.");
+    exit(0);
+  }
+
+  printf("Enter elements: ");
+  for(i = 0; i < n; ++i) {
+    scanf("%d", ptr + i);
+    sum += *(ptr + i);
+  }
+
+  printf("Sum = %d", sum);
+  
+  // deallocating the memory
+  free(ptr);
+
+  return 0;
+}
+
+realloc()
+| If the dynamically allocated memory is insufficient
+  or more than required, we can change the size of 
+  previously allocated memory using the realloc() function.
+| ptr = realloc(ptr, number2 * sizeof(int));
+| Example:
+#include <stdio.h>
+#include <stdlib.h>
+
+int main() {
+  int *ptr, i , n1, n2;
+  printf("Enter size: ");
+  scanf("%d", &n1);
+
+  ptr = (int*) malloc(n1 * sizeof(int));
+
+  printf("Addresses of previously allocated memory:\n");
+  for(i = 0; i < n1; ++i)
+    printf("%pc\n",ptr + i);
+
+  printf("\nEnter the new size: ");
+  scanf("%d", &n2);
+
+  // rellocating the memory
+  ptr = realloc(ptr, n2 * sizeof(int));
+
+  printf("Addresses of newly allocated memory:\n");
+  for(i = 0; i < n2; ++i)
+    printf("%pc\n", ptr + i);
+  
+  free(ptr);
+
+  return 0;
+}
