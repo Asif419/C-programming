@@ -52,3 +52,83 @@ Strings and Pointers
     printf("%c", *(namePtr+1));   // Output: a
     printf("%c", *(namePtr+7));   // Output: o
   }
+
+
+string functions
+  strlen()	computes string's length
+  strcpy()	copies a string to another
+  strcat()	concatenates(joins) two strings
+  strcmp()	compares two strings
+  strlwr()	converts string to lowercase
+  strupr()	converts string to uppercase 
+| Strings handling functions are defined under "string.h" header file.
+
+strlen()
+  #include <stdio.h>
+  #include <string.h>
+  int main()
+  {
+      char a[20]="Program";
+      char b[20]={'P','r','o','g','r','a','m','\0'};
+
+      // using the %zu format specifier to print size_t
+      printf("Length of string a = %zu \n",strlen(a));
+      printf("Length of string b = %zu \n",strlen(b));
+
+      return 0;
+  }
+  
+strcpy()
+  #include <stdio.h>
+  #include <string.h>
+
+  int main() {
+    char str1[20] = "C programming";
+    char str2[20];
+
+    // copying str1 to str2
+    strcpy(str2, str1);
+
+    puts(str2); // C programming
+
+    return 0;
+  }
+  
+strcmp()
+  #include <stdio.h>
+  #include <string.h>
+
+  int main() {
+    char str1[] = "abcd", str2[] = "abCd", str3[] = "abcd";
+    int result;
+
+    // comparing strings str1 and str2
+    result = strcmp(str1, str2);
+    printf("strcmp(str1, str2) = %d\n", result);
+
+    // comparing strings str1 and str3
+    result = strcmp(str1, str3);
+    printf("strcmp(str1, str3) = %d\n", result);
+
+    return 0;
+  }
+
+Output
+  strcmp(str1, str2) = 1
+  strcmp(str1, str3) = 0
+  
+strcat()
+  #include <stdio.h>
+  #include <string.h>
+  int main() {
+     char str1[100] = "This is ", str2[] = "programiz.com";
+
+     // concatenates str1 and str2
+     // the resultant string is stored in str1.
+     strcat(str1, str2);
+
+     puts(str1);
+     puts(str2);
+
+     return 0;
+  }
