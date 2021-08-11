@@ -59,7 +59,7 @@ Register Variable
   Unless you are working on embedded systems where you know how to optimize code for the given application, there is no use of register variables.
 
 Static Variable
-|
+| The value of a static variable persists until the end of the program
   #include <stdio.h>
   void display();
 
@@ -74,3 +74,6 @@ Static Variable
       c += 5;
       printf("%d  ",c);
   }
+  
+Output
+6 11
