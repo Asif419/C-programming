@@ -4,3 +4,17 @@ int 2 bytes
 float, long 4 bytes
 double 8 bytes
 long double 10 bytes
+--------------------
+What is a pointer on pointer?
+A: It’s a pointer variable which can hold the address of another pointer variable
+-------------------
+Distinguish between malloc() & calloc() memory allocation
+A: calloc() and malloc() are dynamic memory allocating functions. 
+The only difference between them is that calloc() will load 
+all the assigned memory locations with value 0 but malloc() will not
+------------------
+What is keyword auto for?
+A: By default every local variable of the function is automatic (auto).
+These variables allocates memory automatically upon entry to that block 
+and free the occupied memory upon exit from that block.
+------------------
