@@ -69,6 +69,9 @@ A: If a variable is used most frequently then it should be
 declared using register storage specifier, 
 then possibly the compiler gives CPU register 
 for its storage to speed up the look up of the variable.
+-----------------
+S++ or S = S+1, which can be recommended to increment the value by 1 and why?
+A: S++, as it is single machine instruction (INC) internally.
 
 
 
