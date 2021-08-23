@@ -51,6 +51,12 @@ the function call and the default value is 0
  ***If a global variable is static then 
     its visibility is limited to the same source code.
 -----------------
+What is a NULL pointer?
+A: A pointer pointing to nothing is called NULL pointer. Eg: char *p=NULL
+-----------------
+What is the purpose of extern storage specifier?
+A: extern specifier is used to declare a global variable that is a variable without 
+any memory assigned to it. It is used to declare variables and functions in header files
 
 
 
