@@ -57,8 +57,18 @@ A: A pointer pointing to nothing is called NULL pointer. Eg: char *p=NULL
 What is the purpose of extern storage specifier?
 A: extern specifier is used to declare a global variable that is a variable without 
 any memory assigned to it. It is used to declare variables and functions in header files
-
-
+-----------------
+Explain the purpose of the function sprintf()
+A: Prints the formatted output onto the character array.
+-----------------
+What is the meaning of base address of the array?
+A: The starting address of the array is called as the base address of the array.
+-----------------
+When should we use the register storage specifier?
+A: If a variable is used most frequently then it should be 
+declared using register storage specifier, 
+then possibly the compiler gives CPU register 
+for its storage to speed up the look up of the variable.
 
 
 
