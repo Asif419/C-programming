@@ -72,6 +72,21 @@ for its storage to speed up the look up of the variable.
 -----------------
 S++ or S = S+1, which can be recommended to increment the value by 1 and why?
 A: S++, as it is single machine instruction (INC) internally.
+-----------------
+What is a dangling pointer?
+A: A pointer initially holding valid address, 
+but later the held address is released or freed. 
+Then such a pointer is called as dangling pointer.
+-----------------
+What is the purpose of the keyword typedef?
+A: This keyword is used to redefine the name of an already existing variable.
+-----------------
+What is lvalue and rvalue?
+A: An lvalue (locator value) represents an object 
+that occupies some identifiable location in memory
+an rvalue is an expression //that does not represent
+an object occupying some identifiable location in memory
+
 
 
 
