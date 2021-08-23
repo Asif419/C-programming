@@ -86,8 +86,15 @@ A: An lvalue (locator value) represents an object
 that occupies some identifiable location in memory
 an rvalue is an expression //that does not represent
 an object occupying some identifiable location in memory
-
-
+-----------------
+What is the difference between actual and formal parameters?
+A: The parameters sent to the function at calling end 
+are called as actual parameters while at the receiving 
+of the function definition called as formal parameters.
+----------------
+Can a program be compiled without main() function?
+A: Yes, it can be but cannot be executed, 
+as the execution requires main() function definition.
 
 
 
