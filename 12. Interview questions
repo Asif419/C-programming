@@ -11,10 +11,80 @@ A: It’s a pointer variable which can hold the address of another pointer varia
 Distinguish between malloc() & calloc() memory allocation
 A: calloc() and malloc() are dynamic memory allocating functions. 
 The only difference between them is that calloc() will load 
-all the assigned memory locations with value 0 but malloc() will not
+all the assigned memory locations with value 0 but malloc() will not.
 ------------------
 What is keyword auto for?
 A: By default every local variable of the function is automatic (auto).
 These variables allocates memory automatically upon entry to that block 
 and free the occupied memory upon exit from that block.
 ------------------
+What are the valid places for the keyword break to appear?
+A: Break can appear only with in the looping control and switch statement. 
+The purpose of the break is to bring the control out from the said blocks.
+------------------
+Explain the syntax for for loop.
+Syntex: 
+for(expression-1;expression-2;expression-3) {
+   //set of statements
+}
+A: When control reaches for expression-1 is executed first. 
+Then following expression-2, and if expression-2 evaluates
+to non-zero ‘set of statements’ and expression-3 is executed,
+follows expression-2
+-----------------
+What is difference between including the header 
+file with-in angular braces < > and double quotes ""?
+A: If a header file is included with in < > then the compiler searches 
+for the particular header file only with in the built in include path. 
+If a header file is included with in “ “, then the compiler 
+searches for the particular header file first in the current working directory, 
+if not found then in the built in include path.
+-----------------
+How a negative integer is stored?
+A: Get the two’s compliment of the same positive integer. Eg: 1011 (-5)
+Step-1 − One’s compliment of 5 : 1010
+Step-2 − Add 1 to above, giving 1011, which is -5
+-----------------
+What is a static variable?
+A: A static local variables retains its value between
+the function call and the default value is 0
+ ***If a global variable is static then 
+    its visibility is limited to the same source code.
+-----------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
